@@ -1,0 +1,6 @@
+[y] The Building window is working.
+[y] The Lift window is working.
+[y] The Call window is working.
+[y] The People window is working.
+[y] The Advanced functionality is working.
+[?] The Bonus functionality is working.

@@ -1,0 +1,17 @@
+public class Main {
+	
+	public static void main(String[] args) {
+		boolean repeat = true;
+		//Scanner scanner = new Scanner(System.in);
+		while (repeat) {
+			Input start = new Input();
+			start.setStringCalculation();
+			
+			ToArray trans = new ToArray();
+			trans.setArrays(start.getStringCalculation());
+			
+			Calculator calculations = new Calculator(trans);
+			System.out.println(calculations.runCalc());
+		} 
+	}
+}

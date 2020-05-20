@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+
+
+<VBox fx:controller="controller.BuildingController" 
+      xmlns:fx="http://javafx.com/fxml/1" spacing="20" 
+      alignment="center"
+      styleClass="root"
+    >
+
+    <HBox spacing="35">
+    <ImageView>
+    <image>
+        <Image url="@building.png"/>
+    </image>
+    </ImageView>
+    <VBox>
+        <Text styleClass="heading" text="Lift System"/>
+        <Text styleClass="subheading" text="Building" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+    </VBox>   
+    </HBox>
+    
+     
+    <TableView fx:id="liftsTv" maxWidth="400" maxHeight="110" items="${controller.building.lifts}">
+        <placeholder>
+            <Label text="No Lifts"/>
+        </placeholder>
+        <columns>
+            <TableColumn text="Lift">
+                <cellValueFactory><PropertyValueFactory property="strLift"/></cellValueFactory>
+                
+            </TableColumn>
+            <TableColumn fx:id="levelColumn" text="Level">
+                <cellValueFactory><PropertyValueFactory property="strLevel"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Direction">
+                <cellValueFactory><PropertyValueFactory property="direction"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Passengers">
+                <cellValueFactory><PropertyValueFactory property="passengerSize"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Waiting">
+                <cellValueFactory><PropertyValueFactory property="waiting"/></cellValueFactory>
+            </TableColumn>
+        </columns>
+            
+            
+       </TableView>
+    
+    <HBox spacing="10" alignment="center">
+        <Button fx:id="callBtn" text="Call Lift" onAction="#handleCallLift"/>
+        <Button fx:id="viewBtn" text="View Lift" disable="true" onAction="#handleViewLift"/>
+        <Button fx:id="peopleBtn" text="People" onAction="#handlePerson"/>
+        <Button fx:id="exitBtn" text="Exit" onAction="#handleExit"/>
+    </HBox> 
+       
+
+    <HBox>
+        <Slider fx:id="delaySl" prefWidth="300" min="1" max="10" snapToTicks="true" majorTickUnit="1" minorTickCount="0" showTickMarks="true" showTickLabels="true"/>
+        <Text fx:id="Timetxt" styleClass="time" text="${'Time: ' + controller.building.time}"/>
+        
+    </HBox>
+    
+    <stylesheets><URL value="@style.css"/></stylesheets>
+    
+</VBox>

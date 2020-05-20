@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+
+public class ToArray {
+	ArrayList<Double> numbers = new ArrayList<Double>();
+	ArrayList<Character> operators = new ArrayList<Character>();
+	
+	public void setArrays(String userInput) {
+		// Sort the input
+		String number = "";
+		if (userInput.charAt(0) == 'q') {
+			System.exit(0);
+		}
+		for (int i = 0; i < userInput.length(); i++) {
+			char num = userInput.charAt(i);
+			// If it is an operator
+			try {
+				if ((num == '+' || num == '-' || num == '*' || num == '/')) {
+					// Add the operator to operators and add everything collected in number to numbers
+					operators.add(num);
+					numbers.add(Double.parseDouble(number));
+					number = "";
+			
+			// If it is not an operator
+				} else {
+					// Add the character to number and repeat the loop unless that character was the last in the string
+					number += num;
+					if (i == userInput.length()-1) {
+						numbers.add(Double.parseDouble(number));
+					}
+				}
+			// Make sure the user doesn't enter bad input
+			} catch (NumberFormatException numForException) {
+				System.out.println("Please check your entry, there seems to be a mistake. Make sure to use period (.) to indicate decimal places.");
+				System.exit(0);
+			}
+		}
+	}
+	
+	public int getNumbersLength () {
+		return numbers.size();
+	}
+	
+	public int getOperatorsLength () {
+		return operators.size();
+	}
+	
+	public double getNumbersValue (int index) {
+		return numbers.get(index);
+	}
+	
+	public char getOperator (int index) {
+		return operators.get(index);
+	}
+	
+	public void printNumbers () {
+		for (int i=0; i<numbers.size(); i++) {
+			System.out.println(numbers.get(i));
+		}
+	}
+	
+	public void printOperators () {
+		for (int i=0; i<operators.size(); i++) {
+			System.out.println(operators.get(i));
+		}
+	}
+}
