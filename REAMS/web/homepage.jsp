@@ -8,22 +8,22 @@
     </head>
     <body>
         <h1>Welcome to REAMS</h1>
-        
+
         <%
             User user = new User();
-                
-            String userId = request.getParameter("userId"); 
-            String sysAdminId = request.getParameter("sysId"); 
-            String fname = request.getParameter("fname"); 
-            String lname = request.getParameter("lname"); 
-            String address = request.getParameter("address"); 
-            String dob = request.getParameter("dob"); 
-            String emailAddress = request.getParameter("email"); 
+
+            String userId = request.getParameter("userId");
+            String sysAdminId = request.getParameter("sysId");
+            String fname = request.getParameter("fname");
+            String lname = request.getParameter("lname");
+            String address = request.getParameter("address");
+            String dob = request.getParameter("dob");
+            String emailAddress = request.getParameter("email");
             String number = request.getParameter("number");
-            String password = request.getParameter("password");      
+            String password = request.getParameter("password");
 
             session.setAttribute("name", user);
-            
+
             user.setUserId(userId);
             user.setSysAdminId(sysAdminId);
             user.setFname(fname);
@@ -33,20 +33,20 @@
             user.setEmailAddress(emailAddress);
             user.setNumber(number);
             user.setPassword(password);
-            
-      
-         
-      
-            if(user != null){
-        
+
+            if (user.getFname() != null) {
+
         %>
         <p>You're logged in as <%= user.getFname()%></p>
-        <a href="index.jsp"><button>Logout</button></a>
+        <form method="post" action="logout.jsp">
+            <input class="bttn" type="submit" value="Logout">
+        </form>
+
         <%
-            }else{
+        } else {
         %>
         <p>You're not signed in <a href='register.jsp'>register</a> or <a href="login.jsp"> login</a></p>
         <%}%>
-        
+
     </body>
 </html>
