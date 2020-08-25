@@ -10,7 +10,7 @@
         <form action="homepage.jsp" method="post">
             <table>
                 <tr><td>First Name:</td><td><input type="text" placeholder="Enter first name" name="fname" required="true"></td></tr>
-                <tr><td>Last Name:</td><td><input type="text" placeholder="Enter last name" name="fname" required="true"></td></tr>
+                <tr><td>Last Name:</td><td><input type="text" placeholder="Enter last name" name="lname" required="true"></td></tr>
                 <tr><td>Date of Birth:</td><td><input type="date" name="dob" required="true"></td></tr>
                 <tr><td>Address:</td><td><input type="text" placeholder="Enter Address" name="address" required="true"></td></tr>
                 <tr><td>Email:</td><td><input type="text" placeholder="Enter email" name="email" required="true"></td></tr>

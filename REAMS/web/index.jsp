@@ -13,6 +13,7 @@
             <tr>
                 <td><a href="login.jsp"><button>Login</button></a></td>
                 <td><a href="register.jsp"><button>Register</button></a></td>
+                <td><a href="homepage.jsp"><button>Continue as guest</button></a></td>
             </tr>
         </table>
     </body>
