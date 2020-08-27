@@ -3,11 +3,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/REAMS_CSS.css">
         <title>Home Page</title>
     </head>
     <body>
-        <h1>Welcome to REAMS</h1>
+        <div class="header">
+            <h1>Welcome to REAMS</h1>
+        </div>
 
         <%
             User user = new User();
@@ -37,14 +41,19 @@
             if (user.getFname() != null) {
 
         %>
+        
+        <div class="top_right_link_div">
+            <a href="logout.jsp">Logout</a>
+        </div>
+        
         <p>You're logged in as <%= user.getFname()%></p>
-        <form method="post" action="logout.jsp">
-            <input class="bttn" type="submit" value="Logout">
-        </form>
 
         <%
         } else {
         %>
+        <div class="top_right_link_div">
+            <a href="index.jsp">Index</a>
+        </div>
         <p>You're not signed in <a href='register.jsp'>register</a> or <a href="login.jsp"> login</a></p>
         <%}%>
 

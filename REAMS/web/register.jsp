@@ -1,12 +1,17 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/REAMS_CSS.css">
         <title>Register Page</title>
     </head>
     <body>
-        <h1>Register</h1>
+        <div class="header">
+            <h1>Register</h1>
+        </div>
+        <div class="top_right_link_div">
+            <a href="index.jsp">Index</a>
+        </div>
         <form action="homepage.jsp" method="post">
             <table>
                 <tr><td>First Name:</td><td><input type="text" placeholder="Enter first name" name="fname" required="true"></td></tr>

@@ -1,20 +1,19 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/REAMS_CSS.css">
         <title>Index Page</title>
     </head>
     <body>
-        <h1>Welcome to REAMS</h1>
+        <div class="header">
+            <h1>Welcome to REAMS</h1>
+        </div>
+        <div class="top_right_link_div">
+            <a href="login.jsp">Login</a>
+            <a href="register.jsp">Register</a>
+            <a href="homepage.jsp">Continue as guest</a>
+        </div>
         <h1>Real Estate Auction Management System</h1>
-        
-        <table>
-            <tr>
-                <td><a href="login.jsp"><button>Login</button></a></td>
-                <td><a href="register.jsp"><button>Register</button></a></td>
-                <td><a href="homepage.jsp"><button>Continue as guest</button></a></td>
-            </tr>
-        </table>
     </body>
 </html>

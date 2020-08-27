@@ -1,12 +1,17 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/REAMS_CSS.css">
         <title>Login Page</title>
     </head>
     <body>
-        <h1>Sign in to REAMS</h1>
+        <div class="header">
+            <h1>Sign in to REAMS</h1>
+        </div>
+        <div class="top_right_link_div">
+            <a href="index.jsp">Index</a>
+        </div>
         <form>
             <table>
                 <tr>
