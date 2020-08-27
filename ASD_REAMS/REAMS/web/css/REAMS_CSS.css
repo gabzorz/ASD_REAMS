@@ -27,3 +27,156 @@ body{
 .top_right_link_div a:hover{
     background-color:white;
 }
+
+/*Header, Logo, Login and Register styling*/
+
+.header-img{
+   background-color: #fffaee;
+   width: 100%;
+}
+.logo{
+    display:inline-block;
+    margin-left: auto !important;
+    margin-top:10px;
+    object-fit: contain;
+    width:132px;
+    height:120px;
+}
+.button.top-actions{
+    display:inline;
+    float:right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fffaee;
+}
+
+li{
+    display:inline-block;
+}
+
+ul li{
+    height: 100px;
+    margin-top: 25px;
+    vertical-align: top;
+    display:inline;
+}
+
+ul li img{
+    vertical-align: middle;
+}
+/*End of Login and Register styling*/
+
+/*Sidenav bar styling*/
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 178px;
+  left: 0;
+  background-color: #404040;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border: #f2f2f2;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+/*  color: #818181;*/
+  color: #f2f2f2;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*End of Sidenav bar styling*/
+
+.main-content{
+    height:100vh;
+    margin:15px auto;
+    padding:16px;
+    width:55%;
+}
+
+.main-content>img{
+    display:block;
+    margin:20px auto;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Navigation bar link styling */
+.topnav a {
+  color: #f2f2f2;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Link colour change on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+h1{
+    text-align: center;
+    font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+    color: #ec4c4c;
+}
+
+.h2{
+    text-align: left;
+    font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+    font-size: 20px;
+    color: #ec4c4c;
+    margin: 5px;
+    padding-top: 10px;
+}
+
+h2.instructions{
+    margin: 5px auto !important;
+}
+
+tr>th:last-child{
+    border-right:0;
+}
+
+tr>td{
+    background:#e0e0eb;
+    border-right: 1px solid white;
+    color:black;
+    padding:6px 8px;
+    text-align:center;
+    
+td{
+    color: #333;
+    font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
