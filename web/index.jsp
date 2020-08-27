@@ -17,3 +17,5 @@
         <h1>Real Estate Auction Management System</h1>
     </body>
 </html>
+<!-- This is a test comment -->
+<!-- This is a test comment -->
