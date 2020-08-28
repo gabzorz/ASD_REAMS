@@ -118,13 +118,13 @@ ul li img{
 }
 
 .topnav {
-  background-color: #333;
+  background-color: #d9d9d9;
   overflow: hidden;
 }
 
 /* Navigation bar link styling */
 .topnav a {
-  color: #f2f2f2;
+  color: #d9d9d9;
   font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
   text-align: center;
   padding: 14px 16px;
@@ -134,7 +134,7 @@ ul li img{
 
 /* Link colour change on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #d9d9d9;
   color: black;
 }
 
@@ -147,14 +147,14 @@ ul li img{
 h1{
     text-align: center;
     font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
-    color: #ec4c4c;
+    color: #c93232;
 }
 
 .h2{
     text-align: left;
     font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
     font-size: 20px;
-    color: #ec4c4c;
+    color: #c93232;
     margin: 5px;
     padding-top: 10px;
 }
@@ -180,3 +180,142 @@ td{
     font-size: 16px;
     padding: 5px;
 }
+
+/*Form styling*/
+form{
+    margin: 20px auto;
+    padding:0 16px;
+    width: 55%;
+}
+label[for="email"], label[for="cardHolderName"], label[for="addressTwo"], label[for="city"],label[for="State/Territory"],label[for="postcode"],label[for="chName"],label[for="firstName"], label[for="lastName"],label[for="password"], label[for="name"], label[for="phoneNumber"], label[for="address"], label[for="savedAddress"],label[for="search"]{
+    display:block;
+    margin:8px auto;
+    text-align:left !important;
+}
+
+.tos-section{
+    margin:32px 18px auto;
+}
+
+.payment-section{
+    margin:32px auto;
+    margin-left: auto;
+    text-align: left;
+    
+}
+
+label[for="tos"]{
+    margin-right: 5px;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="date"], input[type="tel"], input[type="select"] {
+    font-size:16px;
+}
+input[type="email"], input[type="password"], input[type="text"], input[type="date"] , input[type="tel"], input[type="cardNum"], input[type="select"]{
+    display:block;
+    padding:.25em .5em;
+    margin:10px auto;
+    position: relative;
+    width:95%;
+    text-align:left;
+}
+
+input[type="date"]{
+      margin:8px auto;
+}
+
+input[value="Update"]{
+    display:block;
+    margin: 0 auto;
+    width: 65%;
+}
+
+input[value="Save"]{
+    display:block;
+    margin: 0 auto;
+    width: 65%;
+}
+.button{
+  background-color: #ec4c4c; 
+/*  background-color:#0066ff;*/
+  border-radius: 6px;
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  margin:16px auto;
+  margin-right:4px;
+}
+
+
+input[value="login"]{
+    background-color:#0066ff;
+}
+.button:hover {
+    background-color: #ffc04a;
+}
+
+.a{
+    
+}
+
+.instructions{
+    color: #333;
+    font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+    font-size: 16px;
+    margin: 8px auto;
+    text-align: center;
+}
+
+/*Register*/
+h4.gender{
+    font-weight:normal !important;
+    text-align:left;
+}
+
+.gender-labels{
+    display:inline;
+    margin:8px 0;
+    float:left;
+    padding:8px 0;
+}
+
+label[for="dob"]{
+    clear:both;
+    display:block;
+    margin-top:16px;
+    text-align:left;
+}
+/*End of Register*/
+/*End of form styling*/
+
+/*button styling*/
+.button{
+  background-color: #ec4c4c; 
+/*  background-color:#0066ff;*/
+  border-radius: 6px;
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  margin:16px auto;
+  margin-right:4px;
+}
+
+.button:hover {
+    background-color: #ffc04a;
+}
+
+.button.top-actions{
+    display:inline;
+    float:right;
+}
+/*end of button styling*/

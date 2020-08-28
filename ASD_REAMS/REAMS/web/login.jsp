@@ -6,31 +6,25 @@
         <title>Login Page</title>
     </head>
     <body>
-        <div class="header">
-            <h1>Sign in to REAMS</h1>
-        </div>
-        <div class="top_right_link_div">
-            <a href="index.jsp">Index</a>
-        </div>
-        <form>
-            <table>
-                <tr>
-                    <td><input type="text" placeholder="Enter email address" name="email"></td>
-                </tr>
-                <tr>
-                    <td><input type="password" placeholder="Enter password" name="password"></td>
-                </tr>
-            </table>
-        </form>
-        <table>
-            <tr>
-                <td><a href="index.jsp"><button>Cancel</button></a></td>
-                <td><a href="homepage.jsp"><button>Sign in</button></a></td>
-            </tr>
-            <tr>
-                <td><a href="register.jsp">Not a member?</a></td>
-            </tr>
-        </table>
         
+        <div class="topnav">
+            <a href="index.jsp" style="float: left"><img class="logo" src="css/reams_logo 2.png"/>
+            <a href="login.jsp"style="float: right;">Login</a>
+            <a href="register.jsp"style="float: right;">Register</a>
+            <a href="homepage.jsp"style="float: right;">Continue As Guest</a>
+        </div>
+        
+        <h1>Sign in to REAMS</h1>
+        <main>
+            <form style="text-align: center;" method="post">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="text" placeholder="Email Address"/>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password"/>
+            <a class="button" href="index.jsp"> Cancel </a>
+            <input class="button" type="submit" value="Login"/><br>
+            <p class="instructions">New User? <a href= "register.jsp"> Sign Up Here</p>
+        </form>
+        </main>   
     </body>
 </html>

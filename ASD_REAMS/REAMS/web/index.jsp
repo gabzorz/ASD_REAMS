@@ -7,7 +7,7 @@
     </head>
     <body>  
         <div class="topnav">
-            <!--<a href="index.jsp"><img class="logo" src="css/reams_logo.png"/>-->
+            <a href="index.jsp" style="float: left;"><img class="logo" src="css/reams_logo 2.png"/>
             <a href="login.jsp"style="float: right;">Login</a>
             <a href="register.jsp"style="float: right;">Register</a>
             <a href="homepage.jsp"style="float: right;">Continue As Guest</a>
