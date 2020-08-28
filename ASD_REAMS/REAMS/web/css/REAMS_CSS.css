@@ -124,7 +124,7 @@ ul li img{
 
 /* Navigation bar link styling */
 .topnav a {
-  color: #d9d9d9;
+  color: #ddd;
   font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
   text-align: center;
   padding: 14px 16px;
@@ -134,7 +134,7 @@ ul li img{
 
 /* Link colour change on hover */
 .topnav a:hover {
-  background-color: #d9d9d9;
+  background-color: #ddd;
   color: black;
 }
 

@@ -8,6 +8,14 @@
     <body>  
         <div class="topnav">
             <a href="index.jsp" style="float: left;"><img class="logo" src="css/reams_logo 2.png"/>
+        </div>
+        
+        <div class="topnav">
+             <a href="index.jsp"style="float: left;">Home</a>
+            <a style="float: left;">Find a Property</a>
+            <a style="float: left;">News and Reports</a>
+            
+            <a href="login.jsp"style="float: right;">Login</a>
             <a href="login.jsp"style="float: right;">Login</a>
             <a href="register.jsp"style="float: right;">Register</a>
             <a href="homepage.jsp"style="float: right;">Continue As Guest</a>
