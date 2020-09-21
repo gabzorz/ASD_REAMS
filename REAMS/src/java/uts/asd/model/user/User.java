@@ -7,8 +7,6 @@ import uts.asd.model.IdentifiableModel;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
 public class User extends IdentifiableModel {
     private String fname;
     private String lname;

@@ -1,6 +1,5 @@
 package uts.asd;
 
-import com.mongodb.MongoClientOptions;
 import lombok.Getter;
 import uts.asd.action.ActionProcessor;
 import uts.asd.action.ActionRegistry;
@@ -54,9 +53,9 @@ import java.util.function.Supplier;
                 final MongoDatabaseProvider datasource;
                 if (Constants.PERSISTENCE_ENABLED) {
                     //TODO: don't hardcode
-                    MongoClientOptions options = MongoClientOptions.builder().sslEnabled(true).sslInvalidHostNameAllowed(true).build();
                     //datasource = MongoDatabaseProviderFactory.mongo("mongodb+srv://asd:asd@reams.jhz5t.mongodb.net/asd?retryWrites=true&w=majority", "asd");
-                    datasource = MongoDatabaseProviderFactory.mongo("mongodb+srv://asd:asd@cluster0.jhz5t.mongodb.net/reams?retryWrites=true&w=majority&ssl=false","reams");
+
+                    datasource = MongoDatabaseProviderFactory.mongo("mongodb+srv://asd:asd@cluster0.jhz5t.mongodb.net/reams?retryWrites=true&w=majority","reams");
                 } else {
                     datasource = null;
                 }

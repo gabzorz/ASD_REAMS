@@ -1,6 +1,5 @@
 package uts.asd.persistence;
 
-import com.mongodb.MongoClientOptions;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
@@ -21,7 +20,7 @@ import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 public class MongoDatabaseProviderFactory {
 
     public static MongoDatabaseProviderImpl mongo(String connectionString, String database) {
-        MongoClientOptions options =  MongoClientOptions.builder().sslEnabled(true).sslInvalidHostNameAllowed(true).build();
+/*        MongoClientOptions options =  MongoClientOptions.builder().sslEnabled(true).sslInvalidHostNameAllowed(true).build();*/
         final MongoClient client = MongoClients.create(connectionString);
         //final MongoClient client = new MongoClient(connectionString, options);
         final PojoCodecProvider provider = PojoCodecProvider.builder()

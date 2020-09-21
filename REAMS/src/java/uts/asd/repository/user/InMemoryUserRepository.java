@@ -1,5 +1,6 @@
 package uts.asd.repository.user;
 
+import lombok.SneakyThrows;
 import uts.asd.model.user.User;
 import org.bson.types.ObjectId;
 
@@ -30,6 +31,7 @@ public class InMemoryUserRepository implements UserRepository {
     }
 
     @Override
+    @SneakyThrows
     public User create(User instance) {
         return users.compute(instance.getUsername(), (String k, User v) -> {
             instance.setId(new ObjectId());
@@ -38,12 +40,14 @@ public class InMemoryUserRepository implements UserRepository {
     }
 
     @Override
+    @SneakyThrows
     public User update(User instance) {
         users.put(instance.getUsername(), instance);
         return instance;
     }
 
     @Override
+    @SneakyThrows
     public User delete(User instance) {
         return users.remove(instance.getUsername(), instance) ? instance : null;
     }

@@ -1,3 +1,5 @@
 /REAMS/nbproject/private/
 /REAMS/build/
 /REAMS/dist/
+# Project exclude paths
+/target/
